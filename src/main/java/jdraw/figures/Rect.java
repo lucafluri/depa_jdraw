@@ -9,11 +9,11 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.util.ArrayList;
 import java.util.List;
 
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
 import jdraw.framework.Figure;
+import jdraw.framework.FigureEvent;
 import jdraw.framework.FigureHandle;
 import jdraw.framework.FigureListener;
 
@@ -23,8 +23,10 @@ import jdraw.framework.FigureListener;
  * @author Christoph Denzler
  *
  */
-public class Rect implements Figure, Observable {
+public class Rect implements Figure	 {
 	private static final long serialVersionUID = 9120181044386552132L;
+	private ArrayList<FigureListener> fListeners = new ArrayList<FigureListener>();
+
 
 	/**
 	 * Use the java.awt.Rectangle in order to save/reuse code.
@@ -57,13 +59,13 @@ public class Rect implements Figure, Observable {
 	@Override
 	public void setBounds(Point origin, Point corner) {
 		rectangle.setFrameFromDiagonal(origin, corner);
-		// TODO notification of change
+		fListeners.forEach(e -> e.figureChanged(new FigureEvent(this)));
 	}
 
 	@Override
 	public void move(int dx, int dy) {
 		rectangle.setLocation(rectangle.x + dx, rectangle.y + dy);
-		// TODO notification of change
+		fListeners.forEach(e -> e.figureChanged(new FigureEvent(this)));
 	}
 
 	@Override
@@ -88,12 +90,12 @@ public class Rect implements Figure, Observable {
 
 	@Override
 	public void addFigureListener(FigureListener listener) {
-		// TODO Auto-generated method stub
+		fListeners.add(listener);
 	}
 
 	@Override
 	public void removeFigureListener(FigureListener listener) {
-		// TODO Auto-generated method stub
+		fListeners.remove(listener);
 	}
 
 	@Override
@@ -101,11 +103,4 @@ public class Rect implements Figure, Observable {
 		return null;
 	}
 
-	@Override public void addListener(InvalidationListener listener) {
-
-	}
-
-	@Override public void removeListener(InvalidationListener listener) {
-
-	}
 }

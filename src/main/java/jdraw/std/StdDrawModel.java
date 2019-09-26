@@ -21,10 +21,21 @@ public class StdDrawModel implements DrawModel {
 	private ArrayList<Figure> figures = new ArrayList<Figure>();
 	private ArrayList<DrawModelListener> mListeners = new ArrayList<DrawModelListener>();
 
+
+	private void notifyListeners(DrawModel source, Figure f, DrawModelEvent.Type type){
+		mListeners.forEach(e -> e.modelChanged(new DrawModelEvent(source, f, type)));
+	}
+
 	@Override
 	public void addFigure(Figure f) {
 		figures.add(f);
-		mListeners.forEach(e -> e.modelChanged(new DrawModelEvent(this, f, DrawModelEvent.Type.FIGURE_ADDED)));
+
+		f.addFigureListener(e -> {
+			notifyListeners(this, f, DrawModelEvent.Type.FIGURE_CHANGED);
+		});
+
+		notifyListeners(this, f, DrawModelEvent.Type.FIGURE_ADDED);
+
 
 	}
 
@@ -37,6 +48,9 @@ public class StdDrawModel implements DrawModel {
 	@Override
 	public void removeFigure(Figure f) {
 		figures.remove(f);
+
+		mListeners.forEach(e -> e.modelChanged(new DrawModelEvent(this, f, DrawModelEvent.Type.FIGURE_REMOVED)));
+
 	}
 
 	@Override
