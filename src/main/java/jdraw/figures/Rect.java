@@ -11,6 +11,8 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.List;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import jdraw.framework.Figure;
 import jdraw.framework.FigureHandle;
 import jdraw.framework.FigureListener;
@@ -21,7 +23,7 @@ import jdraw.framework.FigureListener;
  * @author Christoph Denzler
  *
  */
-public class Rect implements Figure {
+public class Rect implements Figure, Observable {
 	private static final long serialVersionUID = 9120181044386552132L;
 
 	/**
@@ -99,4 +101,11 @@ public class Rect implements Figure {
 		return null;
 	}
 
+	@Override public void addListener(InvalidationListener listener) {
+
+	}
+
+	@Override public void removeListener(InvalidationListener listener) {
+
+	}
 }

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dfb5fc0f-4611-4322-88f7-289341de1994" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/framework/DrawModelEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/framework/DrawModelEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+            <state relative-caret-position="393">
+              <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
               <folding>
                 <element signature="e#2067#2068#0" expanded="true" />
                 <element signature="e#2085#2086#0" expanded="true" />
@@ -93,6 +92,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>addF</find>
@@ -107,6 +114,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/DrawModelEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/Observable.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" />
       </list>
     </option>
@@ -200,7 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569490860795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569491757629" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -218,7 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in jdraw-assignment.test (3)">
+  <component name="RunManager" selected="Application.JDraw">
     <configuration name="JDraw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdraw.JDraw" />
       <module name="jdraw-assignment.main" />
@@ -266,8 +275,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in jdraw-assignment.test (3)" />
         <item itemvalue="Application.JDraw" />
+        <item itemvalue="JUnit.All in jdraw-assignment.test (3)" />
         <item itemvalue="JUnit.All in jdraw-assignment.test (2)" />
         <item itemvalue="JUnit.All in jdraw-assignment.test (1)" />
         <item itemvalue="JUnit.All in jdraw-assignment.test" />
@@ -294,12 +303,15 @@
     <history-entry file="All_in_jdraw-assignment_test_(3) - 2019.09.26 at 11h 39m 07s.xml">
       <configuration name="All in jdraw-assignment.test (3)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_jdraw-assignment_test_(3) - 2019.09.26 at 11h 42m 58s.xml">
+      <configuration name="All in jdraw-assignment.test (3)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21663019" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21663019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,7 +320,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16352202" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16352202" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,10 +448,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        <state relative-caret-position="393">
+          <caret line="94" column="21" lean-forward="true" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
           <folding>
             <element signature="e#2067#2068#0" expanded="true" />
             <element signature="e#2085#2086#0" expanded="true" />
