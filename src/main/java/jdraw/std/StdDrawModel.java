@@ -6,6 +6,9 @@
 package jdraw.std;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Stream;
 
 import jdraw.framework.*;
@@ -20,6 +23,8 @@ import jdraw.framework.*;
 public class StdDrawModel implements DrawModel {
 	private ArrayList<Figure> figures = new ArrayList<Figure>();
 	private ArrayList<DrawModelListener> mListeners = new ArrayList<DrawModelListener>();
+	//TODO USE MAP
+	private HashMap<Figure, FigureListener> fListeners = new HashMap<Figure, FigureListener>();
 
 
 	private void notifyListeners(DrawModel source, Figure f, DrawModelEvent.Type type){
@@ -30,9 +35,9 @@ public class StdDrawModel implements DrawModel {
 	public void addFigure(Figure f) {
 		figures.add(f);
 
-		f.addFigureListener(e -> {
-			notifyListeners(this, f, DrawModelEvent.Type.FIGURE_CHANGED);
-		});
+		fListeners.put(f, e -> notifyListeners(this, f, DrawModelEvent.Type.FIGURE_CHANGED));
+
+		f.addFigureListener(fListeners.get(f));
 
 		notifyListeners(this, f, DrawModelEvent.Type.FIGURE_ADDED);
 
@@ -48,23 +53,19 @@ public class StdDrawModel implements DrawModel {
 	@Override
 	public void removeFigure(Figure f) {
 		figures.remove(f);
-
+		f.removeFigureListener(fListeners.get(f));
 		mListeners.forEach(e -> e.modelChanged(new DrawModelEvent(this, f, DrawModelEvent.Type.FIGURE_REMOVED)));
 
 	}
 
 	@Override
 	public void addModelChangeListener(DrawModelListener listener) {
-		// TODO to be implemented  
-		//System.out.println("StdDrawModel.addModelChangeListener has to be implemented");
 		mListeners.add(listener);
 
 	}
 
 	@Override
 	public void removeModelChangeListener(DrawModelListener listener) {
-		// TODO to be implemented  
-		//System.out.println("StdDrawModel.removeModelChangeListener has to be implemented");
 		mListeners.remove(listener);
 	}
 
@@ -89,8 +90,7 @@ public class StdDrawModel implements DrawModel {
 
 	@Override
 	public void removeAllFigures() {
-		// TODO to be implemented  
-		System.out.println("StdDrawModel.removeAllFigures has to be implemented");
+		figures.forEach(this::removeFigure);
 	}
 
 }
