@@ -68,7 +68,7 @@ public class DrawModelEvent extends EventObject {
 
 	/**
 	 * Constructs a DrawModelEvent object with the specified model.
-	 * 
+	 *
 	 * @param source model which changed
 	 * @param figure the affected figure
 	 * @param type the event type

@@ -5,12 +5,10 @@
 
 package jdraw.std;
 
+import java.util.ArrayList;
 import java.util.stream.Stream;
 
-import jdraw.framework.DrawCommandHandler;
-import jdraw.framework.DrawModel;
-import jdraw.framework.DrawModelListener;
-import jdraw.framework.Figure;
+import jdraw.framework.*;
 
 /**
  * Provide a standard behavior for the drawing model. This class initially does not implement the methods
@@ -20,36 +18,40 @@ import jdraw.framework.Figure;
  *
  */
 public class StdDrawModel implements DrawModel {
+	private ArrayList<Figure> figures = new ArrayList<Figure>();
+	private ArrayList<DrawModelListener> mListeners = new ArrayList<DrawModelListener>();
 
 	@Override
 	public void addFigure(Figure f) {
-		// TODO to be implemented
-		System.out.println("StdDrawModel.addFigure has to be implemented");
+		figures.add(f);
+		mListeners.forEach(e -> e.modelChanged(new DrawModelEvent(this, f, DrawModelEvent.Type.FIGURE_ADDED)));
+
 	}
 
 	@Override
 	public Stream<Figure> getFigures() {
-		// TODO to be implemented  
-		System.out.println("StdDrawModel.getFigures has to be implemented");
-		return Stream.empty(); // Only guarantees, that the application starts -- has to be replaced !!!
+		//System.out.println("StdDrawModel.getFigures has to be implemented");
+		return figures.stream(); // Only guarantees, that the application starts -- has to be replaced !!!
 	}
 
 	@Override
 	public void removeFigure(Figure f) {
-		// TODO to be implemented  
-		System.out.println("StdDrawModel.removeFigure has to be implemented");
+		figures.remove(f);
 	}
 
 	@Override
 	public void addModelChangeListener(DrawModelListener listener) {
 		// TODO to be implemented  
-		System.out.println("StdDrawModel.addModelChangeListener has to be implemented");
+		//System.out.println("StdDrawModel.addModelChangeListener has to be implemented");
+		mListeners.add(listener);
+
 	}
 
 	@Override
 	public void removeModelChangeListener(DrawModelListener listener) {
 		// TODO to be implemented  
-		System.out.println("StdDrawModel.removeModelChangeListener has to be implemented");
+		//System.out.println("StdDrawModel.removeModelChangeListener has to be implemented");
+		mListeners.remove(listener);
 	}
 
 	/** The draw command handler. Initialized here with a dummy implementation. */
