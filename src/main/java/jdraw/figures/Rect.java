@@ -25,7 +25,7 @@ import jdraw.framework.FigureListener;
  */
 public class Rect implements Figure	 {
 	private static final long serialVersionUID = 9120181044386552132L;
-	private ArrayList<FigureListener> fListeners = new ArrayList<FigureListener>();
+	private ArrayList<FigureListener> fListeners = new ArrayList<>();
 
 
 	/**
@@ -66,6 +66,7 @@ public class Rect implements Figure	 {
 	public void move(int dx, int dy) {
 		rectangle.setLocation(rectangle.x + dx, rectangle.y + dy);
 		fListeners.forEach(e -> e.figureChanged(new FigureEvent(this)));
+
 	}
 
 	@Override

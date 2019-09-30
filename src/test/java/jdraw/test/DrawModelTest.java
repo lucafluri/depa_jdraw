@@ -115,7 +115,7 @@ public class DrawModelTest {
 	public void testRemoveFigure1() {
 		m.addModelChangeListener(e -> cnt++);
 		m.removeFigure(f);
-		assertTrue(cnt == 0, "no notificatoin expected, figure was not contained in model");
+ 		assertTrue(cnt == 0, "no notificatoin expected, figure was not contained in model");
 	}
 
 	@Test
