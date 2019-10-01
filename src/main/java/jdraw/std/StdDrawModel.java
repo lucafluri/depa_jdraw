@@ -31,14 +31,12 @@ public class StdDrawModel implements DrawModel {
 
 	@Override
 	public void addFigure(Figure f) {
-		figures.add(f);
-
-		fListeners.put(f, e -> notifyDrawModelListeners(this, f, DrawModelEvent.Type.FIGURE_CHANGED));
-
-		f.addFigureListener(fListeners.get(f));
-
-		notifyDrawModelListeners(this, f, DrawModelEvent.Type.FIGURE_ADDED);
-
+		if(!figures.contains(f)) {
+			figures.add(f);
+			fListeners.put(f, e -> notifyDrawModelListeners(this, f, DrawModelEvent.Type.FIGURE_CHANGED));
+			f.addFigureListener(fListeners.get(f));
+			notifyDrawModelListeners(this, f, DrawModelEvent.Type.FIGURE_ADDED);
+		}
 
 	}
 
@@ -50,10 +48,11 @@ public class StdDrawModel implements DrawModel {
 
 	@Override
 	public void removeFigure(Figure f) {
-		figures.remove(f);
-		f.removeFigureListener(fListeners.get(f));
-		mListeners.forEach(e -> e.modelChanged(new DrawModelEvent(this, f, DrawModelEvent.Type.FIGURE_REMOVED)));
-
+		if(figures.contains(f)) {
+			f.removeFigureListener(fListeners.get(f));
+			figures.remove(f);
+			notifyDrawModelListeners(this, f, DrawModelEvent.Type.FIGURE_REMOVED);
+		}
 	}
 
 	@Override
@@ -82,10 +81,14 @@ public class StdDrawModel implements DrawModel {
 
 	@Override
 	public void setFigureIndex(Figure f, int index) {
-		// TODO to be implemented  
-		figures.remove(f);
-		figures.add(index, f);
-		notifyDrawModelListeners(this, f, DrawModelEvent.Type.DRAWING_CHANGED);
+		// TODO to be implemented
+		if(index < 0 || index >= figures.size()){throw new IndexOutOfBoundsException();}
+		else if(!figures.contains(f)) {throw new IllegalArgumentException();}
+		else {
+			figures.remove(f);
+			figures.add(index, f);
+			notifyDrawModelListeners(this, f, DrawModelEvent.Type.DRAWING_CHANGED);
+		}
 	}
 
 	@Override

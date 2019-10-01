@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfb5fc0f-4611-4322-88f7-289341de1994" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,14 +64,15 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="236">
-                  <caret line="68" selection-start-line="66" selection-end-line="68" />
+                <state relative-caret-position="240">
+                  <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#2370#2371#0" expanded="true" />
-                    <element signature="e#2401#2402#0" expanded="true" />
-                    <element signature="e#2461#2462#0" expanded="true" />
-                    <element signature="e#2495#2496#0" expanded="true" />
+                    <element signature="e#2064#2065#0" expanded="true" />
+                    <element signature="e#2143#2144#0" expanded="true" />
+                    <element signature="e#2389#2390#0" expanded="true" />
+                    <element signature="e#2490#2491#0" expanded="true" />
+                    <element signature="e#2690#2691#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -82,10 +81,9 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/FigureEvent.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="471">
-                  <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                <state relative-caret-position="223">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
                   <folding>
-                    <element signature="e#749#750#0" expanded="true" />
                     <element signature="e#782#783#0" expanded="true" />
                   </folding>
                 </state>
@@ -95,8 +93,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawView.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4080">
-                  <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+                <state relative-caret-position="408">
+                  <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -104,23 +102,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+                <state relative-caret-position="1292">
+                  <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="6" selection-start-column="6" selection-end-column="6" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="class#TestFigure#0;class#DrawModelTest#0" />
+                    <element signature="e#1915#1916#0" expanded="true" />
+                    <element signature="e#2319#2320#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -131,12 +118,13 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/jdraw/test/RectangleTest.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+                <state relative-caret-position="306">
+                  <caret line="250" column="11" lean-forward="true" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="11" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="class#TestFigure#0;class#DrawModelTest#0" />
                   </folding>
                 </state>
               </provider>
@@ -171,8 +159,8 @@
         <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/Observer.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/Observable.java" />
         <option value="$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" />
       </list>
     </option>
   </component>
@@ -182,10 +170,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="953" />
+    <option name="y" value="8" />
     <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -195,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,15 +242,37 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jdraw-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="depa_jdraw" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdraw-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="depa_jdraw" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdraw-assignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="depa_jdraw" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569872898010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569918737129" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -281,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in jdraw-assignment.test">
+  <component name="RunManager" selected="Application.JDraw">
     <configuration name="JDraw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdraw.JDraw" />
       <module name="jdraw-assignment.main" />
@@ -329,8 +339,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in jdraw-assignment.test" />
         <item itemvalue="Application.JDraw" />
+        <item itemvalue="JUnit.All in jdraw-assignment.test" />
         <item itemvalue="JUnit.All in jdraw-assignment.test (4)" />
         <item itemvalue="JUnit.All in jdraw-assignment.test (3)" />
         <item itemvalue="JUnit.All in jdraw-assignment.test (2)" />
@@ -351,41 +361,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_jdraw-assignment_test_(4) - 2019.09.26 at 16h 43m 58s.xml">
-      <configuration name="All in jdraw-assignment.test (4)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 13h 04m 00s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 09h 08m 29s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 13h 28m 39s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 06m 14s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 13h 39m 36s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 14m 46s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 13h 39m 45s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 18m 22s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 13h 41m 05s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 23m 58s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 13h 45m 12s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 24m 46s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 14h 32m 23s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 25m 06s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 14h 34m 35s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 26m 29s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_jdraw-assignment_test - 2019.09.30 at 14h 43m 55s.xml">
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 30m 32s.xml">
+      <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 31m 09s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1098081" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098614074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -394,7 +405,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33437175" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2502596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,60 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/BellSoft/LibericaJDK-11/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="1541" selection-start-line="1541" selection-end-line="1541" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/FigureListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4080">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/FigureEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#TestFigure#0;class#DrawModelTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="68" selection-start-line="66" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2370#2371#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#2461#2462#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,22 +524,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/FigureEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#782#783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/BellSoft/LibericaJDK-11/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="1539" selection-start-line="1539" selection-end-line="1539" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2389#2390#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+            <element signature="e#2690#2691#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/jdraw/test/RectangleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        <state relative-caret-position="83">
+          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/jdraw/test/DrawModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="250" column="11" lean-forward="true" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#TestFigure#0;class#DrawModelTest#0" />
           </folding>
         </state>
       </provider>
@@ -586,9 +599,81 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jdraw-assignment</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: commons-logging:commons-logging:1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
