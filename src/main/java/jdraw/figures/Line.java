@@ -23,22 +23,10 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *
  */
 public class Line extends AbstractFigure implements Figure {
-	private static final long serialVersionUID = 9120181044386552132L;
-	private CopyOnWriteArrayList<FigureListener> fListeners = new CopyOnWriteArrayList<>();
-
 	/**
 	 * Use the java.awt.Rectangle in order to save/reuse code.
 	 */
 	private final Line2D.Float line;
-
-	/**
-	 * Create a new line of the given dimension.
-	 *
-	 * @param x the x-coordinate of the upper left corner of the line
-	 * @param y the y-coordinate of the upper left corner of the line
-	 * @param w the line's width
-	 * @param h the line's height
-	 */
 
 	public Line(float x1, float y1, float x2, float y2) {
 		line = new Line2D.Float(x1, y1, x2, y2);
@@ -61,7 +49,9 @@ public class Line extends AbstractFigure implements Figure {
 	}
 
 	@Override
-	public void getBounds()
+	public Rectangle getBounds() {
+		return line.getBounds();
+	}
 
 	@Override public void move(int dx, int dy) {
 		line.setLine(line.x1 + dx, line.y1 + dy, line.x2 + dx, line.y2 + dy);

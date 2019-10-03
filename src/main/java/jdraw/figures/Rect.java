@@ -33,6 +33,7 @@ public class Rect implements Figure	 {
 	 * Use the java.awt.Rectangle in order to save/reuse code.
 	 */
 	private final Rectangle rectangle;
+
 	
 	/**
 	 * Create a new rectangle of the given dimension.

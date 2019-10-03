@@ -19,8 +19,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
  *
  */
 public abstract class AbstractFigure implements Figure	 {
-    private static final long serialVersionUID = 9120181044386552132L;
-    private CopyOnWriteArrayList<FigureListener> fListeners = new CopyOnWriteArrayList<>();
+    public static final long serialVersionUID = 9120181044386552132L;
+    public CopyOnWriteArrayList<FigureListener> fListeners = new CopyOnWriteArrayList<>();
 
 
 
