@@ -47,19 +47,24 @@ public class Smiley extends AbstractFigure implements Figure {
 	}
 
 	@Override public void setBounds(Point origin, Point corner) {
-		double width = this.getBounds().width;
-		double height = this.getBounds().height;
+		int mx = corner.x-origin.x >= 0 ? 1 : -1;
+		int my = corner.y-origin.y >= 0 ? 1 : -1;
+
+		double width = this.getBounds().width*mx;
+		double height = this.getBounds().height*my;
 
 		Point originEyeLeft = new Point(origin.x + (int) (0.4*width), origin.y + (int) (0.2*height));
 		Point originEyeRight = new Point(origin.x + (int) (0.6*width), origin.y + (int) (0.2*height));
 		Point cornerEyeLeft = new Point(originEyeLeft.x, originEyeLeft.y + (int) (0.3*height));
 		Point cornerEyeRight = new Point(originEyeRight.x, originEyeRight.y + (int) (0.3*height));
+		Point originMouth = new Point(origin.x + (int) (0.3*width), origin.y + (int) (0.6*height));
+		Point cornerMouth = new Point(origin.x + (int) (0.7*width), origin.y + (int) (0.6*height));
 
 
 		oval.setBounds(origin, corner);
 		eyeLeft.setBounds(originEyeLeft, cornerEyeLeft);
 		eyeRight.setBounds(originEyeRight, cornerEyeRight);
-		mouth.setBounds(origin, corner);
+		mouth.setBounds(originMouth, cornerMouth);
 		fListeners.forEach(e -> e.figureChanged(new FigureEvent(this)));
 	}
 
