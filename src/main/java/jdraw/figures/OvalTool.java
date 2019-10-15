@@ -21,13 +21,6 @@ import java.awt.event.MouseEvent;
  */
 public class OvalTool extends AbstractDrawTool implements DrawTool {
 
-	/**
-	 * Temporary variable. During rectangle creation (during a
-	 * mouse down - mouse drag - mouse up cycle) this variable refers
-	 * to the new rectangle that is inserted.
-	 */
-	private Oval newFigure = null;
-
 
 	/**
 	 * Create a new rectangle tool for the given context.
@@ -59,42 +52,6 @@ public class OvalTool extends AbstractDrawTool implements DrawTool {
 		anchor = new Point(x, y);
 		newFigure = new Oval(x, y, 0, 0);
 		view.getModel().addFigure(newFigure);
-	}
-
-	/**
-	 * During a mouse drag, the Rectangle will be resized according to the mouse
-	 * position. The status bar shows the current size.
-	 *
-	 * @param x   x-coordinate of mouse
-	 * @param y   y-coordinate of mouse
-	 * @param e   event containing additional information about which keys were
-	 *            pressed.
-	 *
-	 * @see DrawTool#mouseDrag(int, int, MouseEvent)
-	 */
-	@Override
-	public void mouseDrag(int x, int y, MouseEvent e) {
-		newFigure.setBounds(anchor, new Point(x, y));
-		java.awt.Rectangle r = newFigure.getBounds();
-		this.context.showStatusText("w: " + r.width + ", h: " + r.height);
-	}
-
-	/**
-	 * When the user releases the mouse, the Rectangle object is updated
-	 * according to the color and fill status settings.
-	 *
-	 * @param x   x-coordinate of mouse
-	 * @param y   y-coordinate of mouse
-	 * @param e   event containing additional information about which keys were
-	 *            pressed.
-	 *
-	 * @see DrawTool#mouseUp(int, int, MouseEvent)
-	 */
-	@Override
-	public void mouseUp(int x, int y, MouseEvent e) {
-		newFigure = null;
-		anchor = null;
-		this.context.showStatusText(TOOLNAME+ " Mode");
 	}
 
 }

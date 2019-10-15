@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dfb5fc0f-4611-4322-88f7-289341de1994" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/LineTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/LineTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -58,78 +62,94 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5183183">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="178" column="4" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="658">
-                  <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#569#570#0" expanded="true" />
-                    <element signature="e#616#617#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="249">
-                  <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#816#817#0" expanded="true" />
-                    <element signature="e#843#844#0" expanded="true" />
-                    <element signature="e#919#920#0" expanded="true" />
-                    <element signature="e#959#960#0" expanded="true" />
-                    <element signature="e#1168#1169#0" expanded="true" />
-                    <element signature="e#1195#1196#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459">
+              <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1209#1210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="787">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -159,16 +179,16 @@
         <option value="$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/LineTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/OvalFigure.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/FreeLine.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/FreeLineTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/LineTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" />
       </list>
     </option>
   </component>
@@ -178,11 +198,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="974" />
-    <option name="height" value="547" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="823" />
+    <option name="width" value="1104" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -192,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -284,11 +304,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570715643229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571126156643" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -386,9 +405,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 06m 14s.xml">
-      <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_jdraw-assignment_test - 2019.10.01 at 10h 14m 46s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
@@ -416,12 +432,15 @@
     <history-entry file="All_in_jdraw-assignment_test - 2019.10.02 at 10h 14m 21s.xml">
       <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_jdraw-assignment_test - 2019.10.15 at 08h 16m 01s.xml">
+      <configuration name="All in jdraw-assignment.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="823" y="0" width="1104" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11247335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20114942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -429,8 +448,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19626169" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32809225" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19601677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -556,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/JDraw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -602,52 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/LineTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/line.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -666,29 +632,92 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/images/freeLine.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/FreeLineTool.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/FreeLine.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/JDraw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractDrawTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/LineTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/FreeLineTool.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
+        <state relative-caret-position="787">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/RectTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="430">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
@@ -697,30 +726,6 @@
             <element signature="e#959#960#0" expanded="true" />
             <element signature="e#1168#1169#0" expanded="true" />
             <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/FreeLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/OvalTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="178" column="4" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

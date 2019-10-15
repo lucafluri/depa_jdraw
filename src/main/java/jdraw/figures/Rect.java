@@ -13,10 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import jdraw.framework.Figure;
-import jdraw.framework.FigureEvent;
-import jdraw.framework.FigureHandle;
-import jdraw.framework.FigureListener;
+import jdraw.framework.*;
 
 /**
  * Represents rectangles in JDraw.
@@ -24,15 +21,12 @@ import jdraw.framework.FigureListener;
  * @author Christoph Denzler
  *
  */
-public class Rect implements Figure	 {
-	private static final long serialVersionUID = 9120181044386552132L;
-	private CopyOnWriteArrayList<FigureListener> fListeners = new CopyOnWriteArrayList<>();
-
-
+public class Rect extends AbstractFigure implements Figure	 {
 	/**
 	 * Use the java.awt.Rectangle in order to save/reuse code.
 	 */
 	private final Rectangle rectangle;
+
 
 	
 	/**
@@ -81,32 +75,6 @@ public class Rect implements Figure	 {
 	@Override
 	public Rectangle getBounds() {
 		return rectangle.getBounds();
-	}
-
-	/**
-	 * Returns a list of 8 handles for this Rectangle.
-	 * @return all handles that are attached to the targeted figure.
-	 * @see jdraw.framework.Figure#getHandles()
-	 */	
-	@Override
-	public List<FigureHandle> getHandles() {
-		return null;
-	}
-
-	@Override
-	public void addFigureListener(FigureListener listener) {
-		fListeners.add(listener);
-	}
-
-	@Override
-	public void removeFigureListener(FigureListener listener) {
-		fListeners.remove(listener);
-		//fListenersToDelete.add(listener);
-	}
-
-	@Override
-	public Figure clone() {
-		return null;
 	}
 
 }

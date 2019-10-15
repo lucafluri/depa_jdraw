@@ -8,9 +8,7 @@ package jdraw.figures;
 import jdraw.framework.AbstractDrawTool;
 import jdraw.framework.DrawContext;
 import jdraw.framework.DrawTool;
-import jdraw.framework.DrawView;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
@@ -23,13 +21,6 @@ import java.awt.event.MouseEvent;
  */
 public class LineTool extends AbstractDrawTool implements DrawTool {
 
-	/**
-	 * Temporary variable. During rectangle creation (during a
-	 * mouse down - mouse drag - mouse up cycle) this variable refers
-	 * to the new rectangle that is inserted.
-	 */
-	private Line newLine = null;
-
 
 	/**
 	 * Create a new rectangle tool for the given context.
@@ -40,6 +31,7 @@ public class LineTool extends AbstractDrawTool implements DrawTool {
 		super(context);
 		TOOLNAME = "Line";
 		FILEPATH = "line.png";
+
 	}
 
 
@@ -55,48 +47,12 @@ public class LineTool extends AbstractDrawTool implements DrawTool {
 	 */
 	@Override
 	public void mouseDown(int x, int y, MouseEvent e) {
-		if (newLine != null) {
+		if (newFigure != null) {
 			throw new IllegalStateException();
 		}
 		anchor = new Point(x, y);
-		newLine = new Line(x, y, x, y);
-		view.getModel().addFigure(newLine);
-	}
-
-	/**
-	 * During a mouse drag, the Rectangle will be resized according to the mouse
-	 * position. The status bar shows the current size.
-	 *
-	 * @param x   x-coordinate of mouse
-	 * @param y   y-coordinate of mouse
-	 * @param e   event containing additional information about which keys were
-	 *            pressed.
-	 *
-	 * @see DrawTool#mouseDrag(int, int, MouseEvent)
-	 */
-	@Override
-	public void mouseDrag(int x, int y, MouseEvent e) {
-		newLine.setBounds(anchor, new Point(x, y));
-		java.awt.Rectangle r = newLine.getBounds();
-		this.context.showStatusText("w: " + r.width + ", h: " + r.height);
-	}
-
-	/**
-	 * When the user releases the mouse, the Rectangle object is updated
-	 * according to the color and fill status settings.
-	 *
-	 * @param x   x-coordinate of mouse
-	 * @param y   y-coordinate of mouse
-	 * @param e   event containing additional information about which keys were
-	 *            pressed.
-	 *
-	 * @see DrawTool#mouseUp(int, int, MouseEvent)
-	 */
-	@Override
-	public void mouseUp(int x, int y, MouseEvent e) {
-		newLine = null;
-		anchor = null;
-		this.context.showStatusText("Line Mode");
+		newFigure = new Line(x, y, x, y);
+		view.getModel().addFigure(newFigure);
 	}
 
 }
