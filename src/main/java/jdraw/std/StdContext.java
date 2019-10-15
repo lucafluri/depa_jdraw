@@ -19,6 +19,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import jdraw.figures.LineTool;
 import jdraw.figures.OvalTool;
 import jdraw.figures.RectTool;
+import jdraw.figures.SmileyTool;
 import jdraw.framework.DrawCommandHandler;
 import jdraw.framework.DrawModel;
 import jdraw.framework.DrawTool;
@@ -175,6 +176,9 @@ public class StdContext extends AbstractContext {
 
 		DrawTool ovalTool = new OvalTool(this);
 		addTool(ovalTool);
+
+		DrawTool smileyTool = new SmileyTool(this);
+		addTool(smileyTool);
 
 		}
 
