@@ -57,8 +57,8 @@ public class Smiley extends AbstractFigure implements Figure {
 		Point originEyeRight = new Point(origin.x + (int) (0.6*width), origin.y + (int) (0.2*height));
 		Point cornerEyeLeft = new Point(originEyeLeft.x, originEyeLeft.y + (int) (0.3*height));
 		Point cornerEyeRight = new Point(originEyeRight.x, originEyeRight.y + (int) (0.3*height));
-		Point originMouth = new Point(origin.x + (int) (0.3*width), origin.y + (int) (0.6*height));
-		Point cornerMouth = new Point(origin.x + (int) (0.7*width), origin.y + (int) (0.6*height));
+		Point originMouth = new Point(origin.x + (int) (0.3*width), origin.y + (int) (0.7*height));
+		Point cornerMouth = new Point(origin.x + (int) (0.7*width), origin.y + (int) (0.7*height));
 
 
 		oval.setBounds(origin, corner);

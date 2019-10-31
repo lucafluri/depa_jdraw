@@ -30,7 +30,7 @@ public class SmileyTool extends AbstractDrawTool implements DrawTool {
 	public SmileyTool(DrawContext context) {
 		super(context);
 		TOOLNAME = "Smiley";
-		FILEPATH = "oval.png";
+		FILEPATH = "smiley.png";
 	}
 
 
