@@ -10,9 +10,12 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import jdraw.Handles.NorthEastHandle;
+import jdraw.Handles.NorthWestHandle;
 import jdraw.framework.*;
 
 /**
@@ -76,5 +79,7 @@ public class Rect extends AbstractFigure implements Figure	 {
 	public Rectangle getBounds() {
 		return rectangle.getBounds();
 	}
+
+
 
 }

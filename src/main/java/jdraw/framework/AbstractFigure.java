@@ -6,6 +6,11 @@
 package jdraw.framework;
 
 
+import jdraw.Handles.NorthEastHandle;
+import jdraw.Handles.NorthHandle;
+import jdraw.Handles.NorthWestHandle;
+
+import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -22,8 +27,6 @@ public abstract class AbstractFigure implements Figure	 {
 
 
 
-
-
     /**
      * Returns a list of 8 handles for this Rectangle.
      * @return all handles that are attached to the targeted figure.
@@ -31,8 +34,15 @@ public abstract class AbstractFigure implements Figure	 {
      */
     @Override
     public List<FigureHandle> getHandles() {
-        return null;
+        List<FigureHandle> handles = new LinkedList<>();
+        handles.add(new NorthWestHandle(this));
+        handles.add(new NorthEastHandle(this));
+        handles.add(new NorthHandle(this));
+        return handles;
+
     }
+
+
 
     @Override
     public void addFigureListener(FigureListener listener) {
