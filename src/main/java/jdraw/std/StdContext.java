@@ -5,6 +5,7 @@
 package jdraw.std;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,12 +21,8 @@ import jdraw.figures.LineTool;
 import jdraw.figures.OvalTool;
 import jdraw.figures.RectTool;
 import jdraw.figures.SmileyTool;
-import jdraw.framework.DrawCommandHandler;
-import jdraw.framework.DrawModel;
-import jdraw.framework.DrawTool;
-import jdraw.framework.DrawToolFactory;
-import jdraw.framework.DrawView;
-import jdraw.framework.Figure;
+import jdraw.framework.*;
+import jdraw.grids.GridFix;
 
 /**
  * Standard implementation of interface DrawContext.
@@ -109,13 +106,37 @@ public class StdContext extends AbstractContext {
 		
 		editMenu.addSeparator();
 		JMenuItem group = new JMenuItem("Group");
-		group.setEnabled(false);
+		group.setEnabled(true);
+		group.addActionListener(e -> {
+			List<Figure> selection = getView().getSelection();
+			if (selection != null && selection.size() >= 2) {
+				Group g = new Group(new ArrayList<>(selection));
+				DrawModel m = getView().getModel();
+				for (Figure f : selection) {
+					m.removeFigure(f);
+				}
+				m.addFigure(g);
+				getView().addToSelection(g);
+			}
+		});
 		editMenu.add(group);
 
 		JMenuItem ungroup = new JMenuItem("Ungroup");
-		ungroup.setEnabled(false);
+		ungroup.setEnabled(true);
 		editMenu.add(ungroup);
+		ungroup.addActionListener(e -> {
+			for(Figure part : getView().getSelection()){
+				if(part instanceof FigureGroup){
+					getModel().removeFigure(part);
+					for (Figure f : ((FigureGroup)part).getFigureParts()) {
+						getModel().addFigure(f);
+						getView().addToSelection(f);
+					}
 
+				}
+			}
+
+		});
 		editMenu.addSeparator();
 
 		JMenu orderMenu = new JMenu("Order...");
@@ -132,9 +153,19 @@ public class StdContext extends AbstractContext {
 		editMenu.add(orderMenu);
 
 		JMenu grid = new JMenu("Grid...");
-		grid.add("Grid 1");
-		grid.add("Grid 2");
-		grid.add("Grid 3");
+
+		JMenuItem gridFix10 = new JMenuItem("Fixed Grid 10");
+		gridFix10.addActionListener(e -> getView().setGrid(new GridFix(10, 10)));
+		grid.add(gridFix10);
+
+		JMenuItem gridFix50 = new JMenuItem("Fixed Grid 50");
+		gridFix50.addActionListener(e -> getView().setGrid(new GridFix(50, 50)));
+		grid.add(gridFix50);
+
+		JMenuItem noGrid = new JMenuItem("No Grid");
+		noGrid.addActionListener(e -> getView().setGrid(null));
+		grid.add(noGrid);
+
 		editMenu.add(grid);
 		
 		return editMenu;

@@ -6,9 +6,7 @@
 package jdraw.framework;
 
 
-import jdraw.Handles.NorthEastHandle;
-import jdraw.Handles.NorthHandle;
-import jdraw.Handles.NorthWestHandle;
+import jdraw.Handles.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -38,6 +36,11 @@ public abstract class AbstractFigure implements Figure	 {
         handles.add(new NorthWestHandle(this));
         handles.add(new NorthEastHandle(this));
         handles.add(new NorthHandle(this));
+        handles.add(new SouthEastHandle(this));
+        handles.add(new SouthWestHandle(this));
+        handles.add(new SouthHandle(this));
+        handles.add(new WestHandle(this));
+        handles.add(new EastHandle(this));
         return handles;
 
     }
