@@ -33,6 +33,9 @@ import jdraw.grids.GridFix;
  */
 @SuppressWarnings("serial")
 public class StdContext extends AbstractContext {
+
+
+	List<Figure> clipboard = new ArrayList<>();
 	/**
 	 * Constructs a standard context with a default set of drawing tools.
 	 * @param view the view that is displaying the actual drawing.
@@ -93,9 +96,35 @@ public class StdContext extends AbstractContext {
 		);
 
 		editMenu.addSeparator();
-		editMenu.add("Cut").setEnabled(false);
-		editMenu.add("Copy").setEnabled(false);
-		editMenu.add("Paste").setEnabled(false);
+		JMenuItem cut = new JMenuItem("Cut");
+		cut.setEnabled(true);
+		cut.addActionListener(e -> {
+			clipboard.clear();
+			clipboard.addAll(getView().getSelection());
+			clipboard.forEach(f -> getModel().removeFigure(f));
+		});
+
+		JMenuItem copy = new JMenuItem("Copy");
+		copy.setEnabled(true);
+		copy.addActionListener(e -> {
+			clipboard.clear();
+			clipboard.addAll(getView().getSelection());
+			getView().getSelection().removeAll(clipboard);
+		});
+
+		JMenuItem paste = new JMenuItem("Paste");
+		paste.setEnabled(true);
+		paste.addActionListener(e -> {
+			clipboard.forEach(f -> {
+				getModel().addFigure(f.clone());
+				getView().addToSelection(f);
+			});
+
+		});
+
+		editMenu.add(cut);
+		editMenu.add(copy);
+		editMenu.add(paste);
 
 		editMenu.addSeparator();
 		JMenuItem clear = new JMenuItem("Clear");

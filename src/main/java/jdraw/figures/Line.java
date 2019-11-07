@@ -53,6 +53,10 @@ public class Line extends AbstractFigure implements Figure {
 		return line.getBounds();
 	}
 
+	@Override public Figure clone() {
+		return new Line(line.x1, line.y1, line.x2, line.y2);
+	}
+
 	@Override public void move(int dx, int dy) {
 		line.setLine(line.x1 + dx, line.y1 + dy, line.x2 + dx, line.y2 + dy);
 

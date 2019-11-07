@@ -49,6 +49,10 @@ public class Oval extends AbstractFigure implements Figure {
 		return oval.getBounds();
 	}
 
+	@Override public Figure clone() {
+		return new Oval(oval.x, oval.y, oval.width, oval.height);
+	}
+
 	@Override public void move(int dx, int dy) {
 		oval.x += dx;
 		oval.y += dy;

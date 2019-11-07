@@ -34,6 +34,7 @@ public class Smiley extends AbstractFigure implements Figure {
 		mouth = new Line(x, y, x, y);
 	}
 
+
 	/**
 	 * Draw the oval to the given graphics context.
 	 *
@@ -71,6 +72,10 @@ public class Smiley extends AbstractFigure implements Figure {
 	@Override
 	public Rectangle getBounds() {
 		return oval.getBounds();
+	}
+
+	@Override public Figure clone() {
+		return new Smiley(this.oval.getBounds().x, this.oval.getBounds().y, this.oval.getBounds().width, this.oval.getBounds().height);
 	}
 
 	@Override public void move(int dx, int dy) {

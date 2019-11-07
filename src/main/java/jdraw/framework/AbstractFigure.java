@@ -7,6 +7,7 @@ package jdraw.framework;
 
 
 import jdraw.Handles.*;
+import jdraw.figures.Smiley;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -59,8 +60,10 @@ public abstract class AbstractFigure implements Figure	 {
     }
 
     @Override
-    public Figure clone() {
+    public Figure clone(){
         return null;
     }
+
+
 
 }
