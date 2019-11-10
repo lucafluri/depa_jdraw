@@ -46,4 +46,13 @@ public class Group extends AbstractFigure implements FigureGroup {
         );
         return bounds;
     }
+
+    @Override
+    public Figure clone() {
+        List<Figure> clones = new ArrayList<>();
+        parts.forEach(e -> {
+            clones.add(e.clone());
+        });
+        return new Group(clones);
+    }
 }

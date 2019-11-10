@@ -32,6 +32,14 @@ public class Smiley extends AbstractFigure implements Figure {
 		eyeLeft = new Line(x, y, x, y);
 		eyeRight = new Line(x, y, x, y);
 		mouth = new Line(x, y, x, y);
+
+	}
+
+	public Smiley (Oval oval, Line line1, Line line2, Line mouth){
+		this.oval = oval;
+		this.eyeLeft = line1;
+		this.eyeRight = line2;
+		this.mouth = mouth;
 	}
 
 
@@ -75,7 +83,7 @@ public class Smiley extends AbstractFigure implements Figure {
 	}
 
 	@Override public Figure clone() {
-		return new Smiley(this.oval.getBounds().x, this.oval.getBounds().y, this.oval.getBounds().width, this.oval.getBounds().height);
+		return new Smiley((Oval) this.oval.clone(), (Line) this.eyeLeft.clone(), (Line) this.eyeRight.clone(), (Line) this.mouth.clone());
 	}
 
 	@Override public void move(int dx, int dy) {

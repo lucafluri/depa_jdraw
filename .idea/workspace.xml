@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53baa033-40ba-4f7a-8fdd-a3899a6d9331" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdraw/framework/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdraw/framework/Group.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -26,18 +21,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-969">
-              <caret line="193" column="13" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
+            <state relative-caret-position="600">
               <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
               <folding>
                 <element signature="e#1606#1607#0" expanded="true" />
@@ -47,20 +33,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+            <state relative-caret-position="344">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="e#2161#2162#0" expanded="true" />
+                <element signature="e#2821#2822#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,19 +72,19 @@
         <option value="$PROJECT_DIR$/src/main/java/jdraw/Handles/WestHandle.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/Handles/EastHandle.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/grids/GridFix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/Group.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Rect.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Line.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Oval.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java" />
         <option value="$PROJECT_DIR$/src/main/java/jdraw/std/StdContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/framework/Group.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="850" />
-    <option name="width" value="1077" />
+    <option name="x" value="874" />
+    <option name="width" value="1053" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -250,10 +232,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="850" y="0" width="1077" height="1087" extended-state="0" />
+    <frame x="874" y="0" width="1053" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20157325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20644511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -464,16 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/Figure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -514,33 +486,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="77" column="135" selection-start-line="77" selection-start-column="135" selection-end-line="77" selection-end-column="135" />
-          <folding>
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2658#2659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-          <folding>
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,8 +511,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/std/StdDrawModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state relative-caret-position="249">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/framework/AbstractFigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdraw/figures/Smiley.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
